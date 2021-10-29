@@ -1,70 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
     <title>FrontCat&Dog</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div id="Barra superior">
-            <p>
-                Grandes ofertas en comederos
-            </p>
-            <!-- Menú regional -->
-            <ul type="none">
-                <li>Español</li>
-                <li>ARG$</li>
-            </ul>
-        </div>   
-        
-        <div id="Barra de menú principal">
-            <img src="/Imagenes/Logo.svg">
-            <!-- Menú principal -->
-            <nav>
-                <ul type="none">
-                    <img src="/Imagenes/pawprint 2.svg">
-                    <li>
-                        <a href="#">
-                            Categorías
-                        </a>    
-                    </li>
-                    <img src="/Imagenes/pawprint 2.svg">
-                    <li>
-                        <a href="#">
-                            Pets
-                        </a>    
-                    </li>
-                    <img src="/Imagenes/pawprint 2.svg">
-                    <li>
-                        <a href="#">
-                            Nosotros
-                        </a>    
-                    </li>
-                    <img src="/Imagenes/pawprint 2.svg">
-                    <li>
-                        <a href="#">
-                            Contactanos
-                        </a>    
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-        
-        <img src="/Imagenes/foto.png">
-        <h1>
-            ¡Es un placer tenerte aquí!
-        </h1>
-        <h2>
-            ¡Comederos en descuento!
-        </h2>
-        <button>
-            COMEDEROS
-        </button>
+      <div style="justify-content: space-between; background: black; display: flex; color: white;">
+        <p>Grandes ofertas en comederos</p>
+        <!-- Menú regional -->
+
+        <!-- Menú desplegable -->
+        <div>
+            <select name="menuRegional" id="">
+                <option value="ARG">ARG$</option>
+                <option value="COP">COP$</option>
+                <option value="USD">USD$</option>
+            </select>
     
+           <select name="menuIdioma" id="">
+                <option value="Español" selected>Español</option>
+                <option value="Ingles">Ingles</option>
+           </select>
+        </div>
+      </div>
+      <!-- Navbar del menú principal !-->
+       
+        <!-- Menú principal -->
+        <nav style="display: flex; background: #F0A83E; justify-content: space-between;">
+        <!-- Logo -->
+            <img src="/Imagenes/Logo.svg" />
+     
+          <ul type="none" style="display: flex;">
+            <span><img src="/Imagenes/pawprint 2.svg" /></span>
+            <li>
+              <a href="#" class="btn"> Categorías </a>
+            </li>
+            <li>
+              <span><img src="/Imagenes/pawprint 2.svg" /></span>
+              <a href="#" class="btn"> Pets </a>
+            </li>
 
-
-</body>
+            <li>
+              <span><img src="/Imagenes/pawprint 2.svg" /></span>
+              <a href="#" class="btn"> Nosotros </a>
+            </li>
+            <li>
+            <span><img src="/Imagenes/pawprint 2.svg">
+              <a href="#" class="btn"> Contactanos </a>
+            </li>
+          </ul>
+        </nav>
+    </header>
+    <!-- Jumbotron -->
+    <div class="">
+        <img src="/Imagenes/foto.png" />
+        <div>
+            <h2>¡Es un placer tenerte aquí!</h2>
+        </div> 
+         <h2>¡Comederos en descuento!</h2>
+         <button>COMEDEROS</button>
+    </div>
+ 
+  </body>
 </html>
